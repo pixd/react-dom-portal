@@ -9,7 +9,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'examples/static'),
-    filename: 'examples-bundle.js',
+    filename: 'bundle.js',
     publicPath: '/static/'
   },
   plugins: [
@@ -19,7 +19,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader'],
       include: [
         path.join(__dirname, 'examples'),
         path.join(__dirname, 'lib')

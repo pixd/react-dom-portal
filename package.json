@@ -16,8 +16,8 @@
   "author": "Yakov Dalinchuk <yakov.dalinchuk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && babel ./lib/portal.js --out-file ./build/portal.js",
-    "clean": "rimraf build && mkdir build",
+    "build": "rimraf build && mkdir build && babel ./lib/portal.js --out-file ./build/portal.js",
+    "examples": "rimraf examples/static && mkdir examples/static && cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
     "lint": "mocha test/eslint.spec.js",
     "prepublish": "cross-env NODE_ENV=production npm run build",
     "start": "node dev-server.js",
