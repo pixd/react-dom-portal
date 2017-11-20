@@ -30,38 +30,40 @@ class App extends React.Component {
       <div>
         <button onClick={this.handleClick}>Click me!</button>
 
-        {portalIsOpen && (
-          <Portal>
-            <div>Base functionality example</div>
-          </Portal>
-        )}
+        {portalIsOpen
+          ? (
+            <Portal>
+              <p>Base functionality example</p>
+            </Portal>
+          )
+          : null}
 
         <Portal isContentMount={portalIsOpen}>
-          <div>`isContentMount` attribute example</div>
+          <p>`isContentMount` attribute example</p>
         </Portal>
 
         <Portal portalName="portal-name">
-          <div>`portalName` attribute example</div>
+          <p>`portalName` attribute example</p>
         </Portal>
 
         <Portal node="section">
-          <div>`node` attribute example (tag name)</div>
+          <p>`node` attribute example (tag name)</p>
         </Portal>
 
         <Portal node={nodeFabric}>
-          <div>`node` attribute example (HTMLElement)</div>
+          <p>`node` attribute example (HTMLElement)</p>
         </Portal>
 
         <Portal node={node}>
-          <div>`node` attribute example (HTMLElement fabric)</div>
+          <p>`node` attribute example (HTMLElement fabric)</p>
         </Portal>
 
         <Portal className="some-class">
-          <div>`className` attribute example</div>
+          <p>`className` attribute example</p>
         </Portal>
 
         <Portal zIndex="1">
-          <div>`zIndex` attribute example</div>
+          <p>`zIndex` attribute example</p>
         </Portal>
       </div>
     );
