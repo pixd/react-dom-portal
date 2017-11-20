@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Portal from 'react-content-portal';
+import Portal from 'react-dom-portal';
 
 const nodeFabric = () => document.createElement('section');
 const node = document.createElement('section');

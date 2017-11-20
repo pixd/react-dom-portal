@@ -1,6 +1,6 @@
 {
   "name": "react-dom-portal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React component for transportation React elements",
   "main": "build/portal",
   "files": [
