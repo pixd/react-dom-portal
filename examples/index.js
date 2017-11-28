@@ -64,6 +64,10 @@ export default class App extends React.Component {
         <Portal zIndex="1">
           <p>`zIndex` attribute example</p>
         </Portal>
+
+        <Portal portalName="portal-name" renderWithParent={(...args) => args.map((arg) => console.log(arg))} >
+          <p>`renderWithParent` attribute example</p>
+        </Portal>
       </div>
     );
   }

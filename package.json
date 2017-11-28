@@ -1,6 +1,6 @@
 {
   "name": "react-dom-portal",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React component for transportation React elements",
   "main": "build/portal",
   "files": [
@@ -16,8 +16,10 @@
   "author": "Yakov Dalinchuk <yakov.dalinchuk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf build && mkdir build && babel ./lib/portal.js --out-file ./build/portal.js",
-    "examples": "rimraf examples/static && mkdir examples/static && cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
+    "build": "npm run clean  && babel ./lib/portal.js --out-file ./build/portal.js",
+    "build:examples": "npm run clean:examples && cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
+    "clean": "rimraf build && mkdir build",
+    "clean:examples": "rimraf examples/static && mkdir examples/static",
     "lint": "mocha test/eslint.spec.js",
     "prepublish": "cross-env NODE_ENV=production npm run build",
     "start": "node dev-server.js",
@@ -29,9 +31,6 @@
   ],
   "keywords": [
     "react-portal",
-    "portal",
-    "modal",
-    "stacking-context",
     "react-component",
     "react"
   ],
@@ -54,8 +53,6 @@
     "express": "^4.15.2",
     "mocha": "^2.3.4",
     "mocha-eslint": "^2.0.2",
-    "path": "^0.12.7",
-    "prop-types": "^15.5.9",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "rimraf": "^2.5.0",
