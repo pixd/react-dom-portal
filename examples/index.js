@@ -41,8 +41,8 @@ export default class App extends React.Component {
           <p>`isContentMount` attribute example</p>
         </Portal>
 
-        <Portal portalName="portal-name">
-          <p>`portalName` attribute example</p>
+        <Portal className="portal-class-name" name="portal-name">
+          <p>`className` and `name` attributes example</p>
         </Portal>
 
         <Portal node="section">
@@ -57,16 +57,8 @@ export default class App extends React.Component {
           <p>`node` attribute example (HTMLElement fabric)</p>
         </Portal>
 
-        <Portal className="some-class">
-          <p>`className` attribute example</p>
-        </Portal>
-
-        <Portal zIndex="1">
-          <p>`zIndex` attribute example</p>
-        </Portal>
-
-        <Portal portalName="portal-name" renderWithParent={(...args) => args.map((arg) => console.log(arg))} >
-          <p>`renderWithParent` attribute example</p>
+        <Portal containerRef={(containerRef) => console.log(containerRef)}>
+          <p>`containerRef` attribute example</p>
         </Portal>
       </div>
     );
