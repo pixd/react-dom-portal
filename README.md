@@ -20,7 +20,7 @@ export default class App extends React.Component {
 
   handleClick() {
     const { portalIsOpen } = this.state;
-    this.setState({ portalIsOpen: ! portalIsOpen });
+    this.setState({ portalIsOpen: !portalIsOpen });
   }
 
   render() {
@@ -39,27 +39,27 @@ export default class App extends React.Component {
           : null}
 
         <Portal isContentMount={portalIsOpen}>
-          <p>`isContentMount` attribute example</p>
+          <p>`isContentMount` prop example</p>
         </Portal>
 
         <Portal className="portal-class-name" name="portal-name">
-          <p>`className` and `name` attributes example</p>
+          <p>`className` and `name` props example</p>
         </Portal>
 
         <Portal node="section">
-          <p>`node` attribute example (tag name)</p>
+          <p>`node` prop example (tag name)</p>
         </Portal>
 
         <Portal node={nodeFabric}>
-          <p>`node` attribute example (HTMLElement)</p>
+          <p>`node` prop example (HTMLElement)</p>
         </Portal>
 
         <Portal node={node}>
-          <p>`node` attribute example (HTMLElement fabric)</p>
+          <p>`node` prop example (HTMLElement fabric)</p>
         </Portal>
 
-        <Portal containerRef={(containerRef) => console.log(containerRef)}>
-          <p>`containerRef` attribute example</p>
+        <Portal nodeRef={(nodeRef) => console.log(nodeRef)}>
+          <p>`nodeRef` prop example</p>
         </Portal>
       </div>
     );
