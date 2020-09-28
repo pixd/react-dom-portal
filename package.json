@@ -1,6 +1,6 @@
 {
   "name": "@pixd/special-portal",
-  "version": "0.1.4",
+  "version": "0.1.0",
   "description": "React component for transportation React elements",
   "main": "build/index",
   "files": [
