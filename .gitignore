@@ -1,4 +1,13 @@
+# production
+/build
+
+# development
+/examples/static
+
+# packages
 node_modules
 npm-debug.log
-/build
-/examples/static
+package-lock.json
+
+# misc
+.idea
