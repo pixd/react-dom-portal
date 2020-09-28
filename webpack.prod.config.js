@@ -3,9 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
-  entry: [
-    './examples/index',
-  ],
+  entry: './examples/index',
   output: {
     path: path.join(__dirname, 'examples/static'),
     filename: 'bundle.js',
@@ -13,11 +11,6 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false,

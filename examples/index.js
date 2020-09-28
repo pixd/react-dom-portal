@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Portal from '../lib/portal';
+import Portal from '../lib';
 
 const nodeFabric = () => document.createElement('section');
 const node = document.createElement('section');
@@ -13,13 +13,6 @@ export default class App extends React.Component {
     this.state = {
       portalIsOpen: false,
     };
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    const { portalIsOpen } = this.state;
-    this.setState({ portalIsOpen: !portalIsOpen });
   }
 
   render() {
@@ -63,6 +56,11 @@ export default class App extends React.Component {
       </div>
     );
   }
+
+  handleClick = () => {
+    const { portalIsOpen } = this.state;
+    this.setState({ portalIsOpen: ! portalIsOpen });
+  };
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

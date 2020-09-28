@@ -5,16 +5,16 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './examples/index'
+    './examples/index',
   ],
   output: {
     path: path.join(__dirname, 'examples/static'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/static/',
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
   ],
   module: {
     loaders: [{
@@ -22,8 +22,8 @@ module.exports = {
       loaders: ['babel-loader'],
       include: [
         path.join(__dirname, 'examples'),
-        path.join(__dirname, 'lib')
-      ]
-    }]
-  }
+        path.join(__dirname, 'lib'),
+      ],
+    }],
+  },
 };
