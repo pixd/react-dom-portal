@@ -30,8 +30,8 @@ export default class App extends React.Component {
           )
           : null}
 
-        <Portal isContentMount={portalIsOpen}>
-          <p>`isContentMount` prop example</p>
+        <Portal contentMount={portalIsOpen}>
+          <p>`contentMount` prop example</p>
         </Portal>
 
         <Portal className="portal-class-name" name="portal-name">
