@@ -65,11 +65,12 @@
     "prop-types": "^15.6.0"
   },
   "bugs": {
-    "url": "https://github.com/pixd/react-dom-portal/issues"
+    "url": "https://github.com/pixd/special-portal/issues"
   },
-  "homepage": "https://github.com/pixd/react-dom-portal#readme",
+  "homepage": "https://github.com/pixd/special-portal#readme",
   "directories": {
     "example": "examples",
+    "lib": "lib",
     "test": "test"
   }
 }
