@@ -1,7 +1,6 @@
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import Portal from 'react-dom-portal';
 
 const nodeFabric = () => document.createElement('section');

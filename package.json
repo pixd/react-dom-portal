@@ -1,6 +1,6 @@
 {
-  "name": "@pixd/special-portal",
-  "version": "0.1.0",
+  "name": "react-dom-portal",
+  "version": "0.1.5",
   "description": "React component for transportation React elements",
   "main": "build/index",
   "files": [
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pixd/special-portal.git"
+    "url": "git+https://github.com/pixd/react-dom-portal.git"
   },
   "author": "Yakov Dalinchuk <yakov.dalinchuk@gmail.com>",
   "license": "MIT",
@@ -28,14 +28,12 @@
   "tags": [
     "react",
     "react-component",
-    "react-portal",
-    "special-portal"
+    "react-portal"
   ],
   "keywords": [
     "react",
     "react-component",
-    "react-portal",
-    "special-portal"
+    "react-portal"
   ],
   "devDependencies": {
     "babel-cli": "^6.8.0",
@@ -67,9 +65,9 @@
     "prop-types": "^15.6.0"
   },
   "bugs": {
-    "url": "https://github.com/pixd/special-portal/issues"
+    "url": "https://github.com/pixd/react-dom-portal/issues"
   },
-  "homepage": "https://github.com/pixd/special-portal#readme",
+  "homepage": "https://github.com/pixd/react-dom-portal#readme",
   "directories": {
     "example": "examples",
     "lib": "lib",
