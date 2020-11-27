@@ -1,6 +1,24 @@
 {
   "parser": "babel-eslint",
   "extends" : ["airbnb"],
+  "rules": {
+    "array-callback-return": 0,
+    "no-cond-assign": 0,
+    "no-mixed-operators": 0,
+    "no-sequences": 0,
+    "no-unused-expressions": 0,
+    "no-useless-concat": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "semi": 1,
+    "space-in-parens": 0,
+    "space-unary-ops": [
+      2,
+      {
+        "words": true,
+        "nonwords": true
+      }
+    ]
+  },
   "env": {
     "browser": true,
     "node": true,
